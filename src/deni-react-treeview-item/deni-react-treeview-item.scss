@@ -21,6 +21,7 @@
   $checkbox-image-width: 10px;
   $checkbox-image-height: 10px;
   $line-height: 40px;
+  $expand-button-left-margin: -18px;
 
   //border: solid 1px green;
 
@@ -79,6 +80,7 @@
     color: darken($base-color, 50%) !important;
     font-size: 22px;
     padding-top: 0px;
+    margin-left: $expand-button-left-margin;
     cursor: pointer;
     text-align: center;
     align-items: center;

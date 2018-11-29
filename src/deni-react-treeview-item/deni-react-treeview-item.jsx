@@ -15,6 +15,7 @@ class DeniReactTreeViewItem extends React.Component {
     let item = this.props.item;
     let level = this.props.level;
     let selectRow = treeview.props.selectRow;
+    let logo = this.props.logo;
 
     let marginLeft = 5;
     let marginLeftItems = level === 0 ? 0 : (treeview.props.showRoot ? level * treeview.props.marginItems : (level - 1) * treeview.props.marginItems);
@@ -33,7 +34,7 @@ class DeniReactTreeViewItem extends React.Component {
 
         <div className={treeviewItemHelper.getClassIconAndText(treeview, item, selectRow)}>
           <div className="logo-wrapper">
-            <img src="https://pbs.twimg.com/profile_images/804298398002282496/xF6YnxRb_400x400.jpg" className="logo" />
+            <img src={treeviewItemHelper.getLogo(item)} className="logo" />
           </div>
           <div className="text">
             <span className="text-inner">{treeviewItemHelper.getInnerText(treeview, item)}</span>
