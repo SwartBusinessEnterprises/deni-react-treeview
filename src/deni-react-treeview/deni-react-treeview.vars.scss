@@ -1,4 +1,4 @@
-$blue: #9DC2E1;
+$blue: #bfbfbf;
 $red: #ff8080;
 $green: #9ce2da; //#80ff80;
 $silver: #bfbfbf;
@@ -6,7 +6,7 @@ $moonlight: #bfbfbf;
 $orange: #ffd280;
 $purple: #ff80ff;
 $metro: #b1b8cd;
-$base-color: $blue;
+$base-color: $silver;
 
 @mixin unselectable {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -27,6 +27,6 @@ $base-color: $blue;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$selection-background-start-color, endColorstr=$end-color,GradientType=0 ); /* IE6-9 */
 }
 
-@mixin base-color($color: $blue) {
+@mixin base-color($color: $silver) {
   $base-color: $color;
 }

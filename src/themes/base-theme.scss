@@ -17,7 +17,6 @@
     }
 
     &.selected {
-      @include gradient-background($base-color);
       outline-color: lighten($base-color, 10%) !important;
     }
     .checkbox {
@@ -44,7 +43,6 @@
         padding: 1px;
       }
       &.selected {
-        @include gradient-background($base-color);
       }
 
     }
