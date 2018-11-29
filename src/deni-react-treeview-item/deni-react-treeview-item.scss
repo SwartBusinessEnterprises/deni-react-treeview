@@ -263,7 +263,7 @@
         .logo {
           width: $image-width;
           height: $image-height;
-              
+          object-fit: cover;    
         }
       }
 
